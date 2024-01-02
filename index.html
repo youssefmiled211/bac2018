@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Evaluation d'un hotel</title>
+  <script src="controle.js"></script>
+</head>
+
+<body onload="GenererCaptcha()">
+  <form action="" method="">
+    <fildset>
+      <h1>Evaluation d'un hotel</h1>
+      <table style="border: none;">
+        <tr style="border: none;">
+          <td style="border: none;"><label>Hotel:</label></td>
+          <td style="border: none;"><select name="opt" id="opt">
+              <option>Choisir un hotel</option>
+              <option>5 Stras</option>
+              <option>Globe</option>
+              <option>The sun</option>
+          </select></td>
+        </tr>
+      </table>
+      <table style="border: 1px solid;">
+        <tr style="border: 1px solid;">
+        <td style="border: 1px solid;"><label>Acceuil :</label></td>
+        <td style="border: 1px solid;"><input type="radio" name="a" id="a1" value="1">Tres satisfaisant <input type="radio" name="a" id="a2" value="2">Satisfisant <input type="radio" name="a" id="a3" value="3">Peu satisfaisant</td></trstyle=>
+        <tr style="border: 1px solid;">
+          <td style="border: 1px solid;">Restaurant :</td>
+          <td style="border: 1px solid;"><input type="radio" name="r" id="r1" value="1">Tres satisfaisant <input type="radio" name="r" id="r2" value="2">Satisfisant <input type="radio" name="r" id="r3" value="3">Peu satisfaisant</td></tr>
+        </tr>
+      <tr style="border: 1px solid;">
+        <td style="border: 1px solid;"><label>Extra :</label></td>
+        <td style="border: 1px solid;"><input type="checkbox" name="e" id="e1" value="4">Piscine couverte <br> <input type="checkbox" name="e" id="e2" value="2">Plage privée <br> <input type="checkbox" name="e" id="e3" value="1">Couverture Wifi   </td></tr>
+      </tr>
+      </table>
+      <div style="border: 1px solid;">
+        <label>Captcha:</label><input type="text" name="capt" id="capt"><input type="button" value="Actualiser" onclick="GenererCaptcha()"><br>
+        <p>Combien des lettres majuscules dans la zone?</p><br>
+        <label>Reponse:</label><input type="text" name="" id="rep">  
+      </div>
+      <input type="reset" value="Annuler"><input type="submit" value="Valider" onclick="Verif()">
+    </fildset>
+  </form>
+</body>
+
+</html> 
